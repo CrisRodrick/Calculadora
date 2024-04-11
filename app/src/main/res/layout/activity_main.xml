@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/valor1"
+        android:layout_width="206dp"
+        android:layout_height="43dp"
+        android:background="@color/azul100"
+        android:backgroundTint="@color/azul100"
+        android:gravity="center"
+        android:text="@string/txt_ingresoValor1"
+        android:textColorLink="@color/azul100"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <TextView
+        android:id="@+id/valor2"
+        android:layout_width="208dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="512dp"
+        android:background="@color/azul100"
+        android:backgroundTint="@color/azul100"
+        android:gravity="center"
+        android:text="@string/txt_ingresoValor2"
+        android:textColorLink="@color/azul100"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/suma"
+        android:layout_width="134dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/Brown400"
+        android:text="@string/botonSuma"
+        android:textColorLink="@color/azul100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valor2"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <Button
+        android:id="@+id/resta"
+        android:layout_width="138dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/Brown400"
+        android:text="@string/botonResta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suma"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/multip"
+        android:layout_width="141dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/Brown400"
+        android:text="@string/botonMultip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resta"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/Brown400"
+        android:text="@string/botonDivis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multip"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="170dp"
+        android:layout_height="36dp"
+        android:background="@color/azul100"
+        android:backgroundTint="@color/azul100"
+        android:gravity="center"
+        android:text="@string/txt_resultado"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/division"
+        app:layout_constraintVertical_bias="0.145" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
